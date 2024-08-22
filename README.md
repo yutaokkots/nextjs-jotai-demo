@@ -1,3 +1,15 @@
+# nextjs jotai and next-auth demo
+
+jotai [website](https://jotai.org)
+
+```npm i jotai``` 
+
+next-auth [getting started](https://next-auth.js.org/getting-started/example)
+
+```npm i next-auth```
+
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started

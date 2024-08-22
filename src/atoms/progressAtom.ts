@@ -1,5 +1,5 @@
 import { atom } from 'jotai';
-import animeAtom from './animeAtom';
+import { animeAtom } from './animeAtom';
 
 const progressAtom = atom((get) => {
         const anime = get(animeAtom)
