@@ -1,6 +1,7 @@
 import NextAuth from "next-auth/next";
 import GoogleProvider from "next-auth/providers/google";
 import EmailProvider from "next-auth/providers/email";
+import InstagramProvider from "next-auth/providers/instagram"
 
 const handler = NextAuth({
     // Configure authentication providers
@@ -9,6 +10,11 @@ const handler = NextAuth({
             clientId: process.env.GOOGLE_CLIENT_ID as string,
             clientSecret: process.env.GOOGLE_CLIENT_SECRET as string
         }),
+        InstagramProvider({
+            clientId: process.env.INSTAGRAM_CLIENT_ID,
+            clientSecret: process.env.INSTAGRAM_CLIENT_SECRET
+          })
+
         // EmailProvider({
         //     server: {
         //       host: process.env.EMAIL_SERVER_HOST,
