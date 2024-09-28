@@ -33,6 +33,10 @@ import {
 
 import CustomToggleGroup from "@/components/CustomToggleGroup"
 import { NavigationMenuDemo } from '@/components/NavigationMenu';
+import PopoverComp from '@/components/PopoverComp';
+import ScrollableData from '@/components/Scrollable';
+import LoadData from '@/components/LoadData';
+import TabComp from '@/components/TabComp';
 
 const Page:React.FC = () => {
     const [ date, setDate ] = useState<Date | undefined>(new Date())
@@ -73,9 +77,19 @@ const Page:React.FC = () => {
                     </div>
 
                 </nav>
-            </header>w
+            </header>
             <main className="flex min-h-screen flex-col items-center p-24 bg-white">
+            
             <NavigationMenuDemo />
+
+            <PopoverComp>
+                <ScrollableData>
+                    <LoadData />
+                </ScrollableData>
+            </PopoverComp>
+
+            <TabComp />
+
                 <div className="text-black text-6xl font-bold ">Component demos (Shadcn) </div>
                 
                     <div className="grid grid-flow-col border-2 rounded-xl p-5 mt-10">
