@@ -30,9 +30,19 @@ export default function Home() {
       </div>
 
       <div>
-      <div className="text-2xl font-semibold hover:bg-slate-400">
-          <Link href="/about">
-            About
+        <div className="text-2xl font-semibold hover:bg-slate-400">
+            <Link href="/about">
+              About
+            </Link>
+        </div>
+        <div className="text-2xl font-semibold hover:bg-slate-400">
+          <Link href="/comps">
+            Shadcn Demo
+          </Link>
+        </div>
+        <div className="text-2xl font-semibold hover:bg-slate-400">
+          <Link href="/muicomps">
+            Material UI Demo
           </Link>
         </div>
       </div>
